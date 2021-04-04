@@ -90,7 +90,7 @@
                     <input type="email" placeholder="Your Email" name="email" required>
                     <input type="text" placeholder="Your Subject" name="subject" required>
                     <textarea name="message" placeholder="Your Message" required></textarea>
-                    <button class="button" type="submit">
+                    <button id="button" class="button" type="submit">
                         <span>Send Message</span><span><i class="fa fa-paper-plane"></i></span>
                     </button>
                 </form>
@@ -98,5 +98,11 @@
         </div>
     </section>
     <script src="./js/reload.js"></script>
+    <script>
+        let button = document.getElementById("button")
+        button.addEventListener("click",()=>{
+            location.reload(true)
+        })
+    </script>
 </body>
 </html>
