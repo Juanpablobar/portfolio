@@ -1,0 +1,23 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "limpiacss" : "purgecss --css ./css/direction-reveal.css --content ./portfolio.html --output ./css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Juanpablobar/portfolio-juan-pablo-barrios.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Juanpablobar/portfolio-juan-pablo-barrios.github.io/issues"
+  },
+  "homepage": "https://github.com/Juanpablobar/portfolio-juan-pablo-barrios.github.io#readme",
+  "devDependencies": {
+    "purgecss": "^4.0.3"
+  }
+}
