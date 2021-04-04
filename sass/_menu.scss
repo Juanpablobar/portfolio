@@ -1,0 +1,125 @@
+.menu{
+	@include flex;
+	position: fixed;
+	z-index: 10;
+	top: 0;
+	right: 2em;
+	height: 100vh;
+	.menu-content{
+		a{
+			display: block;
+			border-radius: 10em;
+			background: #2b2a2a;
+			color: #ddd;
+			width: 50px;
+			height: 50px;
+			@include flex;
+			font-size: 17px;
+			margin-bottom: 1.5em;
+			transition: .5s all;
+			position: relative;
+			span{
+				background: $c3;
+				border-radius: 30px;
+				position: absolute;
+				top: 0;
+				right: 0px;
+				height: 100%;
+				@include flex;
+				font: 500 15px $pop;
+				text-transform: uppercase;
+				padding: 0 30px 0 30px;
+				transition: .3s all;
+				opacity: 0;
+				z-index: -1;
+			}
+			&:hover{
+				background: $c3;
+				span{
+					right: 5px;
+					opacity: 1;
+					padding: 0 50px 0 30px;
+				}
+			}
+		}
+		.button-menu{
+			background: $c3;
+		}
+	}
+}
+.button-toggle{
+	display: none;
+	width: 54px;
+	height: 54px;
+	background: #252522;
+	position: fixed;
+	right: 2em;
+	top: 2em;
+	cursor: pointer;
+	border-radius: 5px;
+	z-index: 12;
+	.button-toggle-items{
+		span{
+			display: block;
+			height: 2px;
+			width: 23px;
+			background: #fff;
+			margin-bottom: 5px;
+			border-radius: 3px;
+			transition: .3s all;
+			position: relative;
+		}
+	}
+	.button-toggle-transform{
+		span{
+			&:nth-child(1){
+				transform: rotate(-45deg) translate(-5px, 5px);
+			}
+			&:nth-child(2){
+				opacity: 0;
+			}
+			&:nth-child(3){
+				transform: rotate(45deg) translate(-5px, -5px);
+				}
+		}
+	}
+}
+
+.menu-sidebar{
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	position: fixed;
+	top: 0;
+	z-index: 11;
+	background: #252525;
+	display: none;
+	padding: 60px 3%;
+	transition: .5s cubic-bezier(0.77,0.2,0.05,1.0);
+	transform: translate(-100%);
+	a{
+		display: flex;
+		color: white;
+		width: 94%;
+		padding: 13px 0;
+		border-bottom: 1px solid #333;
+		font: 400 26px $pop;
+		line-height: 42px;
+		text-transform: uppercase;
+		&:nth-last-child(1){
+			border-bottom: 0px;
+		}
+		span{
+			display: block;
+			margin-right: 1em;
+			font-size: 25px;
+		}
+	}
+	.menu-sidebar-a{
+		color: $c3;
+		font-weight: 600;
+	}
+}
+.menu-sidebar-show{
+	transform: translate(0%);
+}

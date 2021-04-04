@@ -1,0 +1,115 @@
+@import "layouts";
+
+.contact{
+    width: 82.5%;
+    @include margin;
+    display: flex;
+    justify-content: space-between;
+    line-height: 0;
+    margin-top: -2em;
+    .contact-first{
+        width: 35%;
+        .h2{
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+        .h3{
+            margin-top: -.5em;
+            width: 85%;
+        }
+        .contact-item{
+            display: flex;
+            justify-content: flex-start;
+            margin-top: 2em;
+            .contact-item-icon{
+                @include flex;
+                color: $c3;
+                font-size: 35px;
+                margin-right: .5em;
+                .fa-phone-square{
+                    transform: rotate(90deg);
+                }
+            }   
+            .contact-item-text{
+                .h3{
+                    font-weight: 400;
+                    line-height: 21px;
+                    text-transform: uppercase;
+                    opacity: .8;
+                }
+                a{
+                    font: 600 15px $open;
+                    color: #fff;
+                    line-height: 21px;
+                    margin-top: -1em;
+                    display: block;
+                }
+            }
+        }
+        .contact-social{
+            width: 100%;
+            display: flex;
+            margin-top: 1.25em;
+            a{
+                width: 42px;
+                height: 42px;
+                border-radius: 10em;
+                font-size: 19px;
+                transition: .5s all;
+                background: #2b2a2a;
+                position: relative;
+                @include flex;
+                margin-right: .75em;
+                i{
+                    color: #ddd;
+                }
+                &:hover{
+                    background: $c3;
+                }
+            }
+        }
+    }
+    .contact-second{
+        width: 65%;
+        form{
+            margin-top: 1em;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 25px;
+            input,textarea{
+                border-radius: 10em;
+                background: #252525;
+                border: 1px solid #111;
+                font: 400 14px $pop;
+                outline: none;
+                color: #fff;
+                line-height: 24px;
+                padding: .75em 10%;
+                width: 80%;
+                transition: .3s all;
+                &:focus{
+                    border: 1px solid $c3
+                }
+                &::placeholder{
+                    text-transform: uppercase;
+                    font: 400 16px $pop;
+                    opacity: .8;
+                }
+            }
+            textarea{
+                grid-column: span 3;
+                height: 10em;
+                border-radius: 30px;
+                padding: .7em 3%;
+                width: 94%;
+            }
+            button{
+                outline: none;
+                display: block;
+                width: 15em;
+            }
+        }
+    }
+}
+
+@import 'responsive';

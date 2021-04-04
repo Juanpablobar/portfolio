@@ -1,0 +1,124 @@
+@import "layouts";
+
+.potfolio-grid{
+    width: 82.5%;
+    @include margin;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px;
+    padding-bottom: 5em;
+    .direction-reveal__card{
+        border-radius: 5px;
+        height: 20em;
+        overflow: hidden;
+        .direction-reveal__overlay{
+            @include flex;
+            .direction-reveal__title{
+                font: 500 18px $pop;
+                color: white;
+                line-height: 29px;
+                text-transform: uppercase;
+            }
+        }
+    }
+}
+
+.m-lightbox__slide{
+    &:nth-child(1){
+        .lightbox-img{
+            background-image: url('../img/Capture Renovation.webp');
+        }
+    }
+    &:nth-child(2){
+        .lightbox-img{
+            background-image: url('../img/Capture Grodel.webp');
+        }
+    }
+    &:nth-child(3){
+        .lightbox-img{
+            background-image: url('../img/Capture Clinkia.webp');
+        }
+    }
+    &:nth-child(4){
+        .lightbox-img{
+            background-image: url('../img/Capture SpiceHub.webp');
+        }
+    }
+    &:nth-child(5){
+        .lightbox-img{
+            background-image: url('../img/Capture Office Point.webp');
+        }
+    }
+}
+
+.m-lightbox__slide{
+    @include flex;
+    .lightbox-slide{
+        background: #252525;
+        height: 85vh;
+        padding: 15px 30px;
+        border-radius: 10px;
+        .h2{
+            font: 700 33px $pop;
+            line-height: 40px;
+            color: $c3;
+            text-transform: uppercase;
+            text-align: center;
+        }
+        .lightbox-cont{
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 0 20px;
+            margin-top: -.5em;
+            .lightbox-item{
+                grid-column: span 1;
+                display: flex;
+                align-items: flex-start;
+                justify-content: flex-start;
+                margin: -.6em 0;
+                i{
+                    color: white;
+                    margin-right: .5em;
+                }
+                &:nth-child(4){
+                    a{
+                        color: $c3;
+                        text-decoration: underline;
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+        .lightbox-img{
+            min-width: 40em;
+            position: relative;
+            height: 23em;
+            display: block;
+            background-size: 100%;
+            background-repeat: no-repeat;
+            overflow: hidden;
+            transition: all 10s linear 0s;
+            background-position: top;
+            border-radius: 10px;
+            margin-top:1.25em;
+            img{
+                display: none;
+            }
+        }
+        .lightbox-scroll{
+            animation: scroll 10s linear forwards;
+        }
+    }
+}
+
+@keyframes scroll{
+    0%{
+        background-position: top;
+    }
+    100%{
+        background-position: bottom;
+    }
+}
+
+@import 'responsive';

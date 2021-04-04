@@ -1,0 +1,521 @@
+@media screen and (max-width:1125px){
+    .h1{
+        font: 700 42px $pop;
+        line-height: 52px;
+    }
+    .about{
+        width: 80%;
+        .about-first{
+            width: 45%;
+            .about-personal{
+                .h3{
+                    &:nth-child(6){
+                        a{
+                            word-break: break-all;
+                        }
+                    }
+                    a{
+                        display: block;
+                        width: 80%;    
+                    }
+                }
+            }
+        }
+        .about-second{
+            width: 55%;
+            .squares-item{
+                height: 9em;
+                padding: 10px 30px 10px 40px;
+                &:nth-child(3),&:nth-child(4){
+                    margin-top: -9em;
+                }
+                .h1{
+                    font-size: 50px;
+                }
+            }
+        }
+    }
+    .potfolio-grid{
+        .direction-reveal__card{
+            height: 15em;
+        }
+    }    
+}
+
+@media screen and (max-width:1100px){
+    .about{
+        .about-second{
+            .squares-item{
+                padding: 10px 20px 10px 30px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1000px){
+    .h1{
+        font: 700 38px $pop;
+        line-height: 48px;
+    }
+    .menu{
+        display: none;
+    }
+    .button-toggle{
+        @include flex;
+    }
+    .menu-sidebar{
+        display: block;
+    }
+    .content-clip{
+        display: none;
+    }
+    .content{
+        display: block;
+        text-align: center;
+        width: 40em;
+        @include margin;
+        .photo-box{
+            width: 100%;
+            height: auto;
+            padding: 30px 0;
+            margin-top: 1em;
+            .photo{
+                width: 270px;
+                height: 270px;
+                border-radius: 100%;
+                border: 4px solid #252525;
+                .photo-int{
+                    background-position: center;
+                }
+            }
+        }
+        .text-box{
+            width: 100%;
+            .text-content{
+                width: 100%;
+                .text{
+                    width: 100%;
+                    @include margin;
+                    .h1{
+                        margin-top: 0;
+                    }
+                    .h3-2{
+                        font: 500 15px $open;
+                        line-height: 30px;
+                    }
+                }
+            }
+        }
+    }
+    .about{
+        display: block;
+        margin-top: 0em;
+        width: 720px;
+        .about-first{
+            width: 100%;
+            .about-personal{
+                h3{
+                    a{
+                        display:inline !important;
+                    }
+                }
+            }
+        }
+        .about-second{
+            width: 100%;
+            margin-top: 3em;
+            .squares-item{
+                height: auto;
+                padding: 20px 30px 25px 40px;
+                &:nth-child(3),&:nth-child(4){
+                    margin-top: 0;
+                }
+                .squares-item-second{
+                    .h3{
+                        width: 50%;
+                    }
+                }
+            }
+        }
+    }
+    .skills{
+        width: 720px;
+    }
+    .experience{
+        width: 720px;
+        .experience-grid{
+            display: block;
+            .experience-item{
+                margin-bottom: 40px;
+            }
+        }
+    }
+    .contact{
+        display: block;
+        width: 720px;
+        padding-bottom: 4em;
+        .contact-first{
+            width: 100%;
+            .h3{
+                width: 100%;
+            }
+        }
+        .contact-second{
+            width: 100%;
+            margin-top: 3em;
+        }
+    }
+    .potfolio-grid{
+        width: 720px;
+        grid-template-columns: 1fr 1fr;
+        .direction-reveal__card{
+            height: 15em;
+        }
+    }    
+    .m-lightbox{
+        background: #252525 !important;
+        .m-lightbox__close {
+            right: 0em;
+            margin-left: 50%;
+            transform: translate(-50%);
+            position: relative;
+          }
+        .m-lightbox__nextPrev {
+            top: 1em;
+            -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+          }          
+        .m-lightbox__slide{
+            .lightbox-slide{
+                width: 720px;
+                .lightbox-cont{
+                    .lightbox-item{
+                        &:nth-child(4){
+                            h3{
+                                a{
+                                    word-break: break-all;
+                                    display: block;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:800px){
+    .about{
+        width: 540px;
+        .about-second{
+            .squares-item{
+                padding: 10px 30px 15px 40px;
+            }
+        }
+    }
+    .skills{
+        width: 540px;
+        .skills-img{
+            grid-template-columns: repeat(4,1fr);
+        }
+    }
+    .experience{
+        width: 540px;
+        padding-bottom: 2em;
+    }
+    .contact{
+        width: 540px;
+        .contact-second{
+            form{
+                display: block;
+                input,textarea{
+                    margin-bottom: 30px;
+                }
+                textarea{
+                    padding: .75em 10%;
+                    width: 80%;    
+                }
+                button{
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .potfolio-grid{
+        width: 540px;
+    }
+    .m-lightbox{
+        .m-lightbox__slide{
+            .lightbox-slide{
+                width: 540px;
+                .lightbox-img{
+                    min-width: 540px;
+                    height: 20em;
+                }
+            }
+        }
+    }
+}   
+
+@media screen and (max-width:750px){
+    .content{
+        width: 35em;
+    }
+}
+
+@media screen and (max-width:600px){
+    .h1{
+        font-size: 29px;
+        line-height: 39px;
+    }
+    .button-toggle{
+        top: 5px;
+        right: 5px;
+    }
+    .menu-sidebar{
+        padding: 60px 5%;
+        a{
+            width: 90%;
+            span{
+                margin-right: .5em;
+            }
+        }
+    }
+    .content{
+        width: 90%;
+        .photo-box{
+            .photo{
+                width: 200px;
+                height: 200px;
+            }
+        }
+        .text-box{
+            text-align: left;
+            .text-content{
+                .text{
+                    .h3-2{
+                        font-size: 14px;
+                        line-height: 28px;
+                    }
+                }
+            }
+        }
+    }
+    .letters{
+        text-align: left;
+        height: auto;
+        position: relative;
+        background: #252525;
+        padding: 16px 0px 14px;
+        border-bottom: 1px solid #333;
+        margin-bottom: 36px;
+        position: fixed;
+        z-index: 10;
+        top: 0;
+        .h1-back{
+            display: none;
+        }
+        .letters-sub{
+            width: 90%;
+            @include margin;
+            top: 0;
+            position: relative;
+            text-align: left;
+            .h1{
+                font-size: 26px;
+                line-height: 31px;
+                display: block;
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+        }
+    }
+    .about{
+        margin-top: 5.5em;
+        width: 87.5%;
+        .about-first{
+            .h2{
+                font-size: 21px;
+                line-height: 25px;
+            }
+            .photo-box{
+                display: block;
+            }
+            .about-personal{
+                margin-top: 1em;
+                .h3{
+                    font-size: 14px;
+                    a{
+                        display: block !important;
+                    }
+                }
+            }
+        }
+        .about-second{
+            .squares-item{
+                padding: 15px 15px 5px 20px;
+                .h1{
+                    font-size: 40px;
+                    line-height: 48px;
+                    margin: 0 auto;
+                    margin-bottom: .15em;
+                }
+                .squares-item-second{
+                    span{
+                        display: none;
+                    }
+                    .h3{
+                        font-size: 14px;
+                        line-height: 22px;
+                        padding: 0 0;
+                        width: 60%;
+                    }
+                }
+            }
+        }
+    }
+    .skills{
+        width: 87.5%;
+        .h2{
+            font-size: 21px;
+            line-height: 25px;
+        }
+        .skills-img{
+            grid-template-columns: repeat(3,1fr);
+        }
+    }
+    .experience{
+        width: 95%;
+        @include margin;
+        .experience-grid{
+            .experience-item{
+                .h2{
+                    font-size: 17px;
+                    display: block !important;
+                    a{
+                        display: block !important;
+                    }
+                }
+            }
+        }
+        .h2{
+            font-size: 21px;
+            line-height: 25px;
+        }
+    }
+    .contact{
+        margin-top: 5.5em;
+        width: 87.5%;
+        .h2{
+            font-size: 21px;
+            line-height: 25px;
+            margin-bottom: 1em;
+        }
+        .h3{
+            font-size: 14px;
+            line-height: 22px;
+        }
+    }
+    .potfolio-grid{
+        width: 87.5%;
+        margin-top: 5.5em;
+        display: block;
+        .direction-reveal__card{
+            height: 20em;
+            margin-bottom: 30px;
+        }
+    }
+    .m-lightbox{
+        overflow-y: auto;
+        overflow-x: hidden;
+        .m-lightbox__slide{
+            padding-bottom: 5em !important;
+            .lightbox-slide{
+                width: 87.5%;
+                .h2{
+                    font-size: 25px;
+                    line-height: 30px;
+                }
+                .lightbox-cont{
+                    .lightbox-item{
+                        .h3{
+                            font-size: 14px;
+                            line-height: 22px;
+                        }
+                    }
+                }
+                .lightbox-img{
+                    min-width: 87.5%;
+                    height: 15em;
+                }
+            }
+        }
+    }
+    
+}
+
+@media screen and (max-width:550px){
+    .menu-sidebar{
+        a{
+            font-size: 18px;
+            width: 90%;
+            padding: 8px 0;
+            span{
+                font-size: 16px;
+                margin-right: 1em;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:450px){
+    .skills{
+        .skills-img{
+            grid-template-columns: 1fr 1fr;
+            .skills-img-item{
+                img{
+                    width: 70px;
+                }
+                .h3{
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:400px){
+    .about{
+        .about-first{
+            .about-personal{
+                display: block;
+                .h3{
+                    a{
+                        display: inline !important;
+                    }
+                }
+            }
+            .button{
+                display: block;
+                margin-top: 2em;
+            }
+        }
+        .about-second{
+            display: block;
+            .squares-item{
+                margin-bottom: 20px;
+                .squares-item-second{
+                    a{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+    .potfolio-grid{
+        .direction-reveal__card{
+            height: 17em;
+        }
+    }    
+}

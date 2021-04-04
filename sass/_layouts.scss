@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+
+$c1: #111111;
+
+$c2: #222222;
+
+$c3: #FFB400;
+
+$pop: "Poppins";
+
+$open: "Open Sans";
+
+@mixin margin{
+	margin-left: auto;
+    margin-right: auto;
+}
+
+@mixin initial{
+	width: 100%;
+    position: relative;
+}
+
+@mixin flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin center{
+	margin-left: 50%;
+    transform: translate(-50%);
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+::-webkit-scrollbar-thumb {
+    background: #747474;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #666;
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+::-webkit-scrollbar-thumb:active {
+    background-color: #666;
+}
+::-webkit-scrollbar-track {
+    background: #e1e1e1;
+}
+::-webkit-scrollbar-track:hover,
+::-webkit-scrollbar-track:active {
+  background: #d4d4d4;
+}
+
+*{
+	transition: .4s all;
+}
+
+body,html{
+	margin:0;
+    padding:0;
+    min-height: 100%;
+}
+
+body{
+	font-family: $open;
+    background: $c1;
+}
+
+.section{
+	animation: section .7s normal forwards;
+	position: relative;
+}
+
+::selection{
+	background: #444;
+	color: white;
+}
+
+.h1 a::selection{
+	color: #000;
+}
+
+a{
+	text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+.h1-back{
+	font: 800 110px $pop;
+	line-height: 77px;
+	color: rgba(255,255,255,0.07);
+	text-transform: uppercase;
+	letter-spacing: 10px;
+}
+
+.h1{
+	font: 700 51px $pop;
+	line-height: 62px;
+	text-transform: uppercase;
+	color: #fff;
+	a{
+		color: $c3;
+	}
+}			
+
+.h2{
+	font: 600 26px $pop;
+	color: white;
+	line-height: 31px;
+}
+
+.h3{
+	font: 500 15px $open;
+	color: white;
+	line-height: 24px;
+	a{
+		font-weight: 600;
+	}
+}
+
+.button{
+	font: 600 15px $pop;
+	text-transform: uppercase;
+	color: white;
+	line-height: 21px;
+	border-radius: 10em;
+	border: 1px solid $c3;
+	background: $c1;
+	transition: .5s all;
+	overflow: hidden;
+	display: inline-block;
+	line-height: 1.4;
+	text-align: center;
+	cursor: pointer;
+	padding: 16px 70px 16px 35px;
+	position: relative;
+	span:nth-child(1){
+		position: relative;
+	}
+	span:nth-child(2){
+		position: absolute;
+		top: -1px;
+		right: -1px;
+		@include flex;
+		background: $c3;
+		width: 55px;
+		height: 55px;
+		border-radius: 10em;
+		font-size: 20px;
+	}
+	&::before{
+		width: 0%;
+		height: 100%;
+		background: $c3;
+		content: '';
+		position: absolute;
+		top: 0;
+		right: 0;
+		transition: .5s all;
+	}
+	&:hover::before{
+		width: 100%;
+	}
+}
+
+.letters{
+    width: 100%;
+    text-align: center;
+    position: relative;
+	.letters-sub{
+		position: absolute;
+		width: 100%;
+		top: -.5em;
+		text-align: center;
+		.h1{
+			font-weight: 900;
+			font-size: 56px;
+			@include flex;
+			line-height: 0;
+		}
+	}
+}
+
+@keyframes section{
+	0%{
+		top: 5em;
+		opacity: 0;
+	}
+	100%{
+		top: 0em;
+		opacity: 1;
+	}
+}
+
+@import "preloader";
+
+@import "menu";

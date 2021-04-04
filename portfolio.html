@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juan Pablo Barrios - Personal Portfolio</title>
+    <link rel="stylesheet" href="css/portfolio.css">
+    <link rel="stylesheet" href="css/direction-reveal.css">
+    <link rel="stylesheet" href="css/lightbox.css">
+    <link rel="preload" href="fontawesome-free/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="fontawesome-free/css/all.min.css"></noscript>
+</head>
+<body>
+
+    <div id="preloader" class="preloader">
+        <div class="black_wall"></div>
+        <div class="loader"></div>
+    </div>
+
+    <section>
+        <div class="menu">
+            <div class="menu-content">
+                <a href="./"><i class="fa fa-home"></i>
+                <span>Home</span>
+                </a>
+                <a href="about"><i class="fa fa-user"></i>
+                <span>About</span>
+                </a>
+                <a class='button-menu' href="portfolio"><i class="fa fa-briefcase"></i>
+                <span>Portfolio</span>
+                </a>
+                <a href="contact"><i class="fa fa-envelope-open"></i>
+                <span>Contact</span>
+                </a>
+            </div>
+        </div>
+    
+    
+        <div class="button-toggle">
+            <div class="button-toggle-items">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    
+        <div class="menu-sidebar">
+            <a href="./"><span><i class="fa fa-home"></i></span>Home</a>
+            <a href="about"><span><i class="fa fa-user"></i></span>About</a>
+            <a class='menu-sidebar-a'  href="portfolio"><span><i class="fa fa-folder-open"></i></span>Portfolio</a>
+            <a href="contact"><span><i class="fa fa-envelope-open"></i></span>Contact</a>
+        </div>
+
+        <div class="letters">
+            <h1 class="h1-back">Works</h1>
+            <div class="letters-sub">
+                <h1 class="h1">My&nbsp;<a>Portfolio</a></h1>
+            </div>
+        </div>
+        <div class="potfolio-grid direction-reveal direction-reveal--demo-slide">
+
+            <a href="./img/Capture Renovation.webp" class="direction-reveal__card slide--leave-right gallery__item gallery__itemLink" data-project="Landing Page" data-client="Envato" data-languages="HTML, CSS, JavaScript" data-preview="https://renovationcompany.000webhostapp.com/" data-rel="aiLightbox" alt="Renovation Project">
+                <img src="img/Capture Renovation.webp" title="Renovation Project" class="direction-reveal__img">
+                <div class="direction-reveal__overlay direction-reveal__anim--enter">
+                    <h3 class="direction-reveal__title">Renovation Project</h3>
+                </div>
+            </a>
+
+            <a href="./img/Capture Grodel.webp" class="direction-reveal__card slide--leave-right gallery__item gallery__itemLink" data-project="E-Commerce" data-client="Envato" data-languages="HTML, CSSS, JavaScript, PHP, MySQL" data-preview="https://grodel.000webhostapp.com/" data-rel="aiLightbox" alt="Grodel Project">
+                <img src="img/Capture Grodel.webp" title="Grodel Project" class="direction-reveal__img">
+                <div class="direction-reveal__overlay direction-reveal__anim--enter">
+                    <h3 class="direction-reveal__title">Grodel Project</h3>
+                </div>
+            </a>
+
+            <a href="./img/Capture Clinkia.webp" class="direction-reveal__card slide--leave-right gallery__item gallery__itemLink" data-project="E-Commerce" data-client="Envato" data-languages="HTML, CSSS, JavaScript, PHP, MySQL" data-preview="http://clinika-medical.000webhostapp.com/" data-rel="aiLightbox" alt="Clinika Project">
+                <img src="img/Capture Clinkia.webp" title="Clinika Project" class="direction-reveal__img">
+                <div class="direction-reveal__overlay direction-reveal__anim--enter">
+                    <h3 class="direction-reveal__title">Clinika Project</h3>
+                </div>
+            </a>
+
+            <a href="./img/Capture SpiceHub.webp" class="direction-reveal__card slide--leave-right gallery__item gallery__itemLink" data-project="Website" data-client="Envato" data-languages="Html, CSS, JavaScript" data-preview="https://spicehub-res.000webhostapp.com/" data-rel="aiLightbox" alt="Spicehub Project">
+                <img src="img/Capture SpiceHub.webp" title="Spicehub Project" class="direction-reveal__img">
+                <div class="direction-reveal__overlay direction-reveal__anim--enter">
+                    <h3 class="direction-reveal__title">Spicehub Project</h3>
+                </div>
+            </a>
+
+            <a href="./img/Capture Office Point.webp" class="direction-reveal__card slide--leave-right gallery__item gallery__itemLink" data-project="E-Commerce" data-client="Envato" data-languages="HTML, CSS, JavaScript, PHP, MySQL" data-preview="https://equipamostuoficina.com/" data-rel="aiLightbox" alt="Office Point Project">
+                <img src="img/Capture Office Point.webp" title="Office Point Project" class="direction-reveal__img">
+                <div class="direction-reveal__overlay direction-reveal__anim--enter">
+                    <h3 class="direction-reveal__title">Office Point Project</h3>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <script src="./js/reload.js"></script>
+    <script src="./js/main.js" type="module"></script>
+    <script src="./js/Swipe.js"></script>
+    <script src="./js/lightbox.js"></script>
+    <script>
+        let img = document.getElementsByClassName("lightbox-img")
+
+        for (let i = 0; i < img.length; i++) {
+            img[i].addEventListener("mouseover",()=>{
+                img[i].style.backgroundPosition = "bottom"
+            })
+            img[i].addEventListener("mouseout",()=>{
+                img[i].style.backgroundPosition = "top"
+            })
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!-- <?php
+error_reporting(0); 
+$archivo_actual = basename($_SERVER["PHP_SELF"]); //Regresa el nombre del archivo actual
+
+switch($archivo_actual) //Valido en que archivo estoy para generar mi CSS de selección
+ {
+	 case "index.php":
+	 $a = "class='button-menu'";
+	 $a2 = "class='menu-sidebar-a'";
+	 break;
+	 case "about.php":
+	 $b = "class='button-menu'";
+	 $b2 = "class='menu-sidebar-a'";
+	 break;
+	  case "portfolio.php":
+	 $c = "class='button-menu'";
+	 $c2 = "class='menu-sidebar-a'";
+	 break; 
+	  case "contact.php":
+	 $d = "class='button-menu'";
+	 $d2 = "class='menu-sidebar-a'";
+	 break; 
+ }
+?> -->
+    <div class="menu">
+        <div class="menu-content">
+            <a href="./"><i class="fa fa-home"></i>
+            <span>Home</span>
+            </a>
+            <a href="about"><i class="fa fa-user"></i>
+            <span>About</span>
+            </a>
+            <a href="portfolio"><i class="fa fa-briefcase"></i>
+            <span>Portfolio</span>
+            </a>
+            <a href="contact"><i class="fa fa-envelope-open"></i>
+            <span>Contact</span>
+            </a>
+        </div>
+    </div>
+
+
+    <div class="button-toggle">
+        <div class="button-toggle-items">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+
+    <div class="menu-sidebar">
+        <a href="./"><span><i class="fa fa-home"></i></span>Home</a>
+        <a href="about"><span><i class="fa fa-user"></i></span>About</a>
+        <a href="portfolio"><span><i class="fa fa-folder-open"></i></span>Portfolio</a>
+        <a href="contact"><span><i class="fa fa-envelope-open"></i></span>Contact</a>
+    </div>

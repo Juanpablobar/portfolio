@@ -1,0 +1,64 @@
+@import "layouts";
+
+.content-clip{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    right: 0;
+    top: 0;
+    clip-path: polygon(0 0, 12.5% 0%, 25% 100%, 0% 100%);
+    background: $c3;
+}
+.content{
+    @include initial;
+    display: flex;  
+    align-items: center;
+    .photo-box{
+        width: 40%;
+        display: flex;
+        align-items: center;
+        height: 100vh;
+        .photo{
+            width: 84%;
+            background: #111;            
+            height: 87.5vh;
+            @include margin;
+            border-radius: 30px;
+            box-shadow: 0 0 7px rgba(0,0,0,.9);
+            overflow: hidden;
+            .photo-int{
+                width: 100%;
+                height: 100%;
+                background-image: url("../img/2.jpg");
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: top;
+            }
+        }
+    }
+    .text-box{
+        width: 60%;
+        .text-content{
+            width: 92%;
+            @include margin;
+            display: flex;
+            justify-content: space-between;
+            .text{
+                width: 75%;
+                margin-left: 5%;
+                h1{
+                    margin-bottom: 0;
+                }
+                h3{
+                    margin-bottom: 2em;
+                }
+                .h3-2{
+                    font-size: 16px;
+                    line-height: 35px;
+                }
+            }
+        }
+    }
+}
+
+@import 'responsive';
