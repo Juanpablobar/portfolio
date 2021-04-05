@@ -871,10 +871,10 @@ li {
           height: 15em; }
 
   .language {
-    top: 100px; }
+    top: 110px; }
 
   .change-lang {
-    top: 55px; } }
+    top: 65px; } }
 @media screen and (max-width: 550px) {
   .menu-sidebar a {
     font-size: 18px;
