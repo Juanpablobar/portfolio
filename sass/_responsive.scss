@@ -472,6 +472,7 @@
 @media screen and (max-width:500px){
     .error{
         width: 90%;
+        @include margin;
         .error-content{
             margin-top: -10em;
             .h1-error{

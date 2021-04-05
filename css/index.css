@@ -745,7 +745,9 @@ li {
       margin-right: 1em; } }
 @media screen and (max-width: 500px) {
   .error {
-    width: 90%; }
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto; }
     .error .error-content {
       margin-top: -10em; }
       .error .error-content .h1-error {
