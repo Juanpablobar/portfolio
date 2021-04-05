@@ -712,7 +712,13 @@ li {
           line-height: 22px; }
         .m-lightbox .m-lightbox__slide .lightbox-slide .lightbox-img {
           min-width: 87.5%;
-          height: 15em; } }
+          height: 15em; }
+
+  .language {
+    top: 100px; }
+
+  .change-lang {
+    top: 55px; } }
 @media screen and (max-width: 550px) {
   .menu-sidebar a {
     font-size: 18px;
