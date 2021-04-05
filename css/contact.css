@@ -31,7 +31,8 @@ body, html {
 
 body {
   font-family: "Open Sans";
-  background: #111111; }
+  background: #111111;
+  overflow-x: hidden; }
 
 .section {
   animation: section .7s normal forwards;
@@ -767,7 +768,8 @@ li {
       padding-bottom: 5em !important; }
       .m-lightbox .m-lightbox__slide .lightbox-slide {
         width: 95%;
-        padding: 15px; }
+        padding: 15px;
+        margin-top: 2em; }
         .m-lightbox .m-lightbox__slide .lightbox-slide .h2 {
           font-size: 25px;
           line-height: 30px; }
