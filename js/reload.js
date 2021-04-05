@@ -15,3 +15,23 @@ toggle_close.addEventListener("click",()=>{
     toggle_close_child.classList.toggle("button-toggle-transform")
     sidebar.classList.toggle("menu-sidebar-show")
 })
+
+let lang = document.getElementById("language")
+let lang_change = document.getElementById("change-lang")
+let lang_close = document.getElementById("lang-close")
+
+lang.addEventListener("click",()=>{
+    lang.classList.add("language-out")
+    setTimeout(()=>{
+        lang_change.classList.add("change-lang-show")
+    },300)
+})
+
+lang_close.addEventListener("click",()=>{
+    lang_change.classList.remove("change-lang-show")
+    setTimeout(()=>{
+        lang.classList.remove("language-out")
+    },300)
+})
+
+
