@@ -770,6 +770,8 @@ li {
         .m-lightbox .m-lightbox__slide .lightbox-slide .lightbox-cont .lightbox-item .h3 {
           font-size: 14px;
           line-height: 22px; }
+          .m-lightbox .m-lightbox__slide .lightbox-slide .lightbox-cont .lightbox-item .h3 a {
+            display: block; }
         .m-lightbox .m-lightbox__slide .lightbox-slide .lightbox-img {
           min-width: 87.5%;
           height: 15em; } }
