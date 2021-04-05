@@ -420,10 +420,10 @@ li {
         position: relative;
         line-height: 0; }
         .about .about-second .squares-item .h1::after {
-          content: '+';
+          content: '%';
           font-size: 35px;
           position: absolute;
-          top: -.25em;
+          top: 0em;
           font-weight: 400; }
       .about .about-second .squares-item .squares-item-second {
         display: flex; }

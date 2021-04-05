@@ -64,10 +64,10 @@
                 position: relative;
                 line-height: 0;
                 &::after{
-                    content: '+';
+                    content: '%';
                     font-size: 35px;
                     position: absolute;
-                    top: -.25em;
+                    top: 0em;
                     font-weight: 400;
                 }
             }
