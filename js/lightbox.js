@@ -246,7 +246,7 @@ var Lightbox = (_temp = _class = function Lightbox(_ref) {
             var imageSrc = item.getAttribute('href');
             var title = item.getAttribute('alt')
             let project = item.getAttribute('data-project')
-            let client = item.getAttribute('data-client')
+            let made = item.getAttribute('data-made')
             let languages = item.getAttribute('data-languages')
             let preview = item.getAttribute('data-preview')
             return `
@@ -258,7 +258,7 @@ var Lightbox = (_temp = _class = function Lightbox(_ref) {
                         <h3 class="h3"><i class="far fa-file-alt"></i> Project : <a>${project}</a></h3>
                         </div>
                         <div class="lightbox-item">
-                            <h3 class="h3"><i class="far fa-user"></i> Client : <a>${client}</a></h3>
+                            <h3 class="h3"><i class="far fa-calendar"></i> Made in : <a>${made}</a></h3>
                         </div>
                         <div class="lightbox-item">
                             <h3 class="h3"><i class="fa fa-code"></i> Languages : <a>${languages}</a></h3>
