@@ -715,10 +715,10 @@ li {
           height: 15em; }
 
   .language {
-    top: 110px; }
+    top: 150px; }
 
   .change-lang {
-    top: 55px; } }
+    top: 105px; } }
 @media screen and (max-width: 550px) {
   .menu-sidebar a {
     font-size: 18px;
