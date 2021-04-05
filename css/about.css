@@ -786,7 +786,7 @@ li {
 
   .about {
     margin-top: 5.5em;
-    width: 95%; }
+    width: 87.5%; }
     .about .about-first .h2 {
       font-size: 21px;
       line-height: 25px; }
@@ -859,7 +859,8 @@ li {
     .m-lightbox .m-lightbox__slide {
       padding-bottom: 5em !important; }
       .m-lightbox .m-lightbox__slide .lightbox-slide {
-        width: 87.5%; }
+        width: 95%;
+        padding: 15px; }
         .m-lightbox .m-lightbox__slide .lightbox-slide .h2 {
           font-size: 25px;
           line-height: 30px; }
