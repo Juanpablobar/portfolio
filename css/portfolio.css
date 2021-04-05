@@ -782,7 +782,8 @@ li {
   .error {
     width: 90%;
     margin-left: auto;
-    margin-right: auto; }
+    margin-right: auto;
+    height: auto; }
     .error .error-content {
       margin-top: -10em; }
       .error .error-content .h1-error {

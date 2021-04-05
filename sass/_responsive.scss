@@ -473,6 +473,7 @@
     .error{
         width: 90%;
         @include margin;
+        height: auto;
         .error-content{
             margin-top: -10em;
             .h1-error{
