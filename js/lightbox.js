@@ -268,7 +268,7 @@ var Lightbox = (_temp = _class = function Lightbox(_ref) {
                         </div>
                     </div>
                     <div class="lightbox-img">
-                        <img title='${title}' data-src='${imageSrc}' loading="lazy"/>
+                        <img title='${title}' data-src='${imageSrc}'/>
                     </div>
                 </div>
             </div>`
@@ -308,7 +308,7 @@ var Lightbox = (_temp = _class = function Lightbox(_ref) {
 
 var lb = new Lightbox({
     selector: '[data-rel="aiLightbox"]', // string
-    lazyload: true, // boolean
+    lazyload: false, // boolean
     arrows: true, // boolean
     counter: false, // boolean
     slideSpeed: 500 });
