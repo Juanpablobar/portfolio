@@ -156,26 +156,6 @@ var Lightbox = (_temp = _class = function Lightbox(_ref) {
             };
         };
 
-        items.forEach(function (item) {
-            // https://gist.github.com/Tam/d44c87b3daeb07b15984ddc6127d4e34
-            new Swipe(item.querySelector('img'), function (e, direction) {
-                e.preventDefault();
-                switch (direction) {
-                    case "up":
-                        // Handle Swipe Up
-                        break;
-                    case "down":
-                        // Handle Swipe Down
-                        break;
-                    case "left":
-                        _this.goToNext(e);
-                        break;
-                    case "right":
-                        _this.goToPrev(e);
-                        break;
-                }
-            });
-        });
     };
 
     this.setNav = function (index) {
