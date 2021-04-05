@@ -469,6 +469,23 @@
     }
 }
 
+@media screen and (max-width:500px){
+    .error{
+        width: 90%;
+        .error-content{
+            margin-top: -10em;
+            .h1-error{
+                font: 700 125px $pop;
+                line-height: 0;
+            }
+            h2{
+                font-size: 20px;
+                margin-bottom: 1.5em;
+            }
+        }
+    }    
+}
+
 @media screen and (max-width:450px){
     .skills{
         .skills-img{

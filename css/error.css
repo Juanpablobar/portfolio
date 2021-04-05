@@ -361,193 +361,37 @@ li {
 .change-lang-show {
   transform: translate(0); }
 
-.about {
-  width: 82.5%;
-  margin-left: auto;
-  margin-right: auto;
+.content-clip {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  right: 0;
+  top: 0;
+  clip-path: polygon(0 0, 12.5% 0%, 25% 100%, 0% 100%);
+  background: #FFB400; }
+
+.error {
+  width: 100%;
+  height: 100vh;
   display: flex;
-  margin-top: -2.5em; }
-  .about .about-first {
-    width: 50%; }
-    .about .about-first .h2 {
-      text-transform: uppercase; }
-    .about .about-first .photo-box {
-      width: 100%;
-      display: flex;
-      align-items: center;
-      padding: 10px 0;
-      display: none; }
-      .about .about-first .photo-box .photo {
-        width: 230px;
-        height: 230px;
-        background: #111;
-        margin-left: auto;
-        margin-right: auto;
-        border-radius: 100%;
-        border: 4px solid #252525;
-        box-shadow: 0 0 7px rgba(0, 0, 0, 0.9);
-        overflow: hidden; }
-        .about .about-first .photo-box .photo .photo-int {
-          width: 100%;
-          height: 100%;
-          background-image: url("../img/2.jpg");
-          background-size: cover;
-          background-repeat: no-repeat;
-          background-position: center; }
-    .about .about-first .about-personal {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      margin-bottom: 1em; }
-      .about .about-first .about-personal .h3 {
-        font-weight: 500;
-        color: #ddd;
-        margin: 0;
-        margin-bottom: 1.25em; }
-        .about .about-first .about-personal .h3 a {
-          color: white; }
-  .about .about-second {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    width: 50%;
-    grid-gap: 30px; }
-    .about .about-second .squares-item {
-      padding: 10px 30px 10px 40px;
-      border: 1px solid #252525;
-      border-radius: 5px; }
-      .about .about-second .squares-item .h1 {
-        color: #FFB400;
-        position: relative;
-        line-height: 0; }
-        .about .about-second .squares-item .h1::after {
-          content: '+';
-          font-size: 35px;
-          position: absolute;
-          top: -.25em;
-          font-weight: 400; }
-      .about .about-second .squares-item .squares-item-second {
-        display: flex; }
-        .about .about-second .squares-item .squares-item-second span {
-          display: block;
-          width: 35px;
-          background: white;
-          height: 1px;
-          position: relative;
-          opacity: .5;
-          margin-top: .25em; }
-        .about .about-second .squares-item .squares-item-second .h3 {
-          text-transform: uppercase;
-          padding: 0 15px;
-          margin-top: -.5em; }
-
-.skills {
-  margin-top: 4em;
-  padding: 2em 0 3em 0;
-  width: 75%;
-  margin-left: auto;
-  margin-right: auto;
-  position: relative; }
-  .skills::before {
-    width: 42.5%;
-    margin-left: 50%;
-    transform: translate(-50%);
-    position: absolute;
-    top: 0;
-    background: #252525;
-    height: 1px;
-    content: ''; }
-  .skills::after {
-    width: 42.5%;
-    margin-left: 50%;
-    transform: translate(-50%);
-    position: absolute;
-    bottom: 0;
-    background: #252525;
-    height: 1px;
-    content: ''; }
-  .skills .h2 {
+  justify-content: center;
+  align-items: center; }
+  .error .error-content {
+    margin-top: -8em;
     text-align: center; }
-  .skills .skills-img {
-    width: 100%;
-    position: relative;
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-gap: 40px 30px;
-    margin-top: 3em; }
-    .skills .skills-img .skills-img-item {
-      position: relative;
-      padding-bottom: 3em; }
-      .skills .skills-img .skills-img-item img {
-        width: 80px;
-        margin-left: 50%;
-        transform: translate(-50%);
-        opacity: .9; }
-      .skills .skills-img .skills-img-item .h3 {
-        text-transform: uppercase;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 0;
-        position: absolute;
-        bottom: 0;
-        margin-left: 50%;
-        width: 100%;
-        transform: translate(-50%); }
-
-.experience {
-  width: 82.5%;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 2em 0 6em 0; }
-  .experience .h2 {
-    text-align: center; }
-  .experience .experience-grid {
-    margin-top: 3em;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 45px 25px;
-    position: relative; }
-    .experience .experience-grid .experience-item {
-      padding: 0 0 0 2.5em;
-      border-left: 1px solid #252525;
-      margin: 0 1.5em;
-      position: relative; }
-      .experience .experience-grid .experience-item .span-grid {
-        font: 600 12px "Open Sans";
-        color: #fff;
-        line-height: 19px;
-        background: #212121;
-        border-radius: 10em;
-        padding: 3px 10px;
-        opacity: .8; }
-      .experience .experience-grid .experience-item .h2 {
-        text-align: left;
-        font: 500 18px "Poppins";
-        line-height: 22px;
-        display: flex;
-        align-items: center;
-        width: 100%;
-        margin-top: 1em; }
-        .experience .experience-grid .experience-item .h2 a {
-          font: 600 15px "Open Sans";
-          opacity: .8; }
-      .experience .experience-grid .experience-item .h3 {
-        margin-top: -.5em;
-        font-size: 14px;
-        line-height: 24px;
-        margin-bottom: 0; }
-      .experience .experience-grid .experience-item .span-y {
-        background: #FFB400;
-        border-radius: 10em;
-        width: 40px;
-        height: 40px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: white;
-        position: absolute;
-        top: 0;
-        font-size: 14px;
-        left: -20px; }
+    .error .error-content .h1-error {
+      font: 700 175px "Poppins";
+      letter-spacing: 5px;
+      color: #fff;
+      text-shadow: 1px 2px #2b2b2b, 2px 4px #2b2b2b, 3px 6px #2b2b2b, 4px 8px #2b2b2b, 5px 10px #2b2b2b, 6px 12px #2b2b2b, 7px 14px #2b2b2b, 8px 16px #2b2b2b, 9px 18px #2b2b2b, 10px 20px #2b2b2b;
+      line-height: 0; }
+    .error .error-content h2 {
+      font: 600 25px "Poppins";
+      color: #fff; }
+    .error .error-content h3 {
+      font: 400 16px "Poppins";
+      color: white;
+      margin-top: -1em; }
 
 @media screen and (max-width: 1125px) {
   .h1 {
@@ -913,4 +757,4 @@ li {
   .potfolio-grid .direction-reveal__card {
     height: 17em; } }
 
-/*# sourceMappingURL=about.css.map */
+/*# sourceMappingURL=error.css.map */

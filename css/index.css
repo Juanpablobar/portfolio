@@ -743,6 +743,17 @@ li {
     .menu-sidebar a span {
       font-size: 16px;
       margin-right: 1em; } }
+@media screen and (max-width: 500px) {
+  .error {
+    width: 90%; }
+    .error .error-content {
+      margin-top: -10em; }
+      .error .error-content .h1-error {
+        font: 700 125px "Poppins";
+        line-height: 0; }
+      .error .error-content h2 {
+        font-size: 20px;
+        margin-bottom: 1.5em; } }
 @media screen and (max-width: 450px) {
   .skills .skills-img {
     grid-template-columns: 1fr 1fr; }

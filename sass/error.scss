@@ -1,0 +1,52 @@
+
+@import "layouts";
+
+@function longshadow($num,$color: white){
+    $shadow: '';
+    $i: 0;
+    @for $i from 1 through $num{
+      $shadow: $shadow + (1 * $i) + 'px' + ' ' + (1 * ($i * 2)) + 'px' + ' ' + $color;
+      @if $i < $num{
+        $shadow: $shadow + ', ';
+      }
+    }
+    @return unquote($shadow);
+  }
+
+.content-clip{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    right: 0;
+    top: 0;
+    clip-path: polygon(0 0, 12.5% 0%, 25% 100%, 0% 100%);
+    background: $c3;
+}
+
+.error{
+    width: 100%;
+    height: 100vh;
+    @include flex;
+    .error-content{
+        margin-top: -8em;
+        text-align: center;
+        .h1-error{
+            font: 700 175px $pop;
+            letter-spacing: 5px;
+            color: #fff;
+            text-shadow: longshadow(10,darken(#444,10%));
+            line-height: 0;
+        }
+        h2{
+            font: 600 25px $pop;
+            color: #fff;
+        }
+        h3{
+            font: 400 16px $pop;
+            color: white;
+            margin-top: -1em;
+        }
+    }
+}
+
+@import 'responsive';
