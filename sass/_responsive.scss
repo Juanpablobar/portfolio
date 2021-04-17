@@ -479,7 +479,7 @@
         @include margin;
         height: auto;
         .error-content{
-            margin-top: -10em;
+            margin-top: 10em;
             .h1-error{
                 font: 700 125px $pop;
                 line-height: 0;
@@ -489,7 +489,15 @@
                 margin-bottom: 1.5em;
             }
         }
-    }    
+    }
+    .language{
+        left: calc(100% - 1.5em - 28px);
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+        border-top-left-radius: 4px;
+        border-bottom-left-radius: 3px;
+        top: 80vh;
+    }
 }
 
 @media screen and (max-width:450px){

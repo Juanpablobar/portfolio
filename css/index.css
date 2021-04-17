@@ -755,13 +755,21 @@ li {
     margin-right: auto;
     height: auto; }
     .error .error-content {
-      margin-top: -10em; }
+      margin-top: 10em; }
       .error .error-content .h1-error {
         font: 700 125px "Poppins";
         line-height: 0; }
       .error .error-content h2 {
         font-size: 20px;
-        margin-bottom: 1.5em; } }
+        margin-bottom: 1.5em; }
+
+  .language {
+    left: calc(100% - 1.5em - 28px);
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 3px;
+    top: 80vh; } }
 @media screen and (max-width: 450px) {
   .skills .skills-img {
     grid-template-columns: 1fr 1fr; }

@@ -1,110 +1,776 @@
-/*
-Error: Invalid CSS after "...            dis": expected "{", was "}"
-        on line 449 of sass/_responsive.scss
-        from line 52 of sass/error.scss
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap");
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px; }
 
-444:                         .h3{
-445:                             font-size: 14px;
-446:                             line-height: 22px;
-447:                             a{
-448:                                 dis
-449:                             }
-450:                         }
-451:                     }
-452:                 }
-453:                 .lightbox-img{
-454:                     min-width: 87.5%;
+::-webkit-scrollbar-thumb {
+  background: #747474; }
 
-Backtrace:
-sass/_responsive.scss:449
-sass/error.scss:52
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1308:in `expected'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1238:in `expected'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1233:in `tok!'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:688:in `block'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:758:in `declaration_or_ruleset'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:708:in `block_child'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:697:in `block_contents'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:689:in `block'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:758:in `declaration_or_ruleset'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:708:in `block_child'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:700:in `block_contents'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:689:in `block'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:758:in `declaration_or_ruleset'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:708:in `block_child'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:697:in `block_contents'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:689:in `block'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:758:in `declaration_or_ruleset'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:708:in `block_child'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:697:in `block_contents'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:689:in `block'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:758:in `declaration_or_ruleset'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:708:in `block_child'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:700:in `block_contents'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:689:in `block'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:758:in `declaration_or_ruleset'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:708:in `block_child'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:700:in `block_contents'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:689:in `block'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:758:in `declaration_or_ruleset'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:708:in `block_child'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:700:in `block_contents'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:689:in `block'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:758:in `declaration_or_ruleset'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:708:in `block_child'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:700:in `block_contents'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:689:in `block'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:421:in `media_directive'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:234:in `special_directive'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:209:in `directive'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:707:in `block_child'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:700:in `block_contents'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:137:in `stylesheet'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:41:in `parse'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/engine.rb:414:in `_to_tree'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/engine.rb:321:in `to_tree'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:323:in `block in visit_import'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/stack.rb:88:in `block in with_import'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/stack.rb:135:in `with_frame'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/stack.rb:88:in `with_import'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:322:in `visit_import'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `block in with_base'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/stack.rb:135:in `with_frame'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `with_base'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `visit'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `map'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:157:in `visit'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:10:in `visit'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/root_node.rb:36:in `css_tree'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/engine.rb:389:in `_render_with_sourcemap'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/engine.rb:307:in `render_with_sourcemap'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:209:in `each'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:443:in `on_file_changed'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:320:in `block in watch'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-listen-4.0.0/lib/sass-listen/event/config.rb:23:in `call'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:115:in `_process_changes'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:19:in `block in loop_for'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop_for'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:84:in `_wait_for_changes'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:42:in `block in setup'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-listen-4.0.0/lib/sass-listen/internals/thread_pool.rb:6:in `block in add'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"...            dis\": expected \"{\", was \"}\"\A         on line 449 of sass/_responsive.scss\A         from line 52 of sass/error.scss\A \A 444:                         .h3{\A 445:                             font-size: 14px;\A 446:                             line-height: 22px;\A 447:                             a{\A 448:                                 dis\A 449:                             }\A 450:                         }\A 451:                     }\A 452:                 }\A 453:                 .lightbox-img{\A 454:                     min-width: 87.5%;"; }
+::-webkit-scrollbar-thumb:hover {
+  background: #666;
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2); }
+
+::-webkit-scrollbar-thumb:active {
+  background-color: #666; }
+
+::-webkit-scrollbar-track {
+  background: #e1e1e1; }
+
+::-webkit-scrollbar-track:hover,
+::-webkit-scrollbar-track:active {
+  background: #d4d4d4; }
+
+* {
+  transition: .4s all; }
+
+body, html {
+  margin: 0;
+  padding: 0;
+  min-height: 100%; }
+
+body {
+  font-family: "Open Sans";
+  background: #111111;
+  overflow-x: hidden; }
+
+.section {
+  animation: section .7s normal forwards;
+  position: relative; }
+
+::selection {
+  background: #444;
+  color: white; }
+
+.h1 a::selection {
+  color: #000; }
+
+a {
+  text-decoration: none; }
+
+li {
+  list-style: none; }
+
+.h1-back {
+  font: 800 110px "Poppins";
+  line-height: 77px;
+  color: rgba(255, 255, 255, 0.07);
+  text-transform: uppercase;
+  letter-spacing: 10px; }
+
+.h1 {
+  font: 700 51px "Poppins";
+  line-height: 62px;
+  text-transform: uppercase;
+  color: #fff; }
+  .h1 a {
+    color: #FFB400; }
+
+.h2 {
+  font: 600 26px "Poppins";
+  color: white;
+  line-height: 31px; }
+
+.h3 {
+  font: 500 15px "Open Sans";
+  color: white;
+  line-height: 24px; }
+  .h3 a {
+    font-weight: 600; }
+
+.button {
+  font: 600 15px "Poppins";
+  text-transform: uppercase;
+  color: white;
+  line-height: 21px;
+  border-radius: 10em;
+  border: 1px solid #FFB400;
+  background: #111111;
+  transition: .5s all;
+  overflow: hidden;
+  display: inline-block;
+  line-height: 1.4;
+  text-align: center;
+  cursor: pointer;
+  padding: 16px 70px 16px 35px;
+  position: relative; }
+  .button span:nth-child(1) {
+    position: relative; }
+  .button span:nth-child(2) {
+    position: absolute;
+    top: -1px;
+    right: -1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FFB400;
+    width: 55px;
+    height: 55px;
+    border-radius: 10em;
+    font-size: 20px; }
+  .button::before {
+    width: 0%;
+    height: 100%;
+    background: #FFB400;
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    transition: .5s all; }
+  .button:hover::before {
+    width: 100%; }
+
+.letters {
+  width: 100%;
+  text-align: center;
+  position: relative; }
+  .letters .letters-sub {
+    position: absolute;
+    width: 100%;
+    top: -.5em;
+    text-align: center; }
+    .letters .letters-sub .h1 {
+      font-weight: 900;
+      font-size: 56px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      line-height: 0; }
+
+@keyframes section {
+  0% {
+    top: 5em;
+    opacity: 0; }
+  100% {
+    top: 0em;
+    opacity: 1; } }
+.preloader {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #111;
+  transform-origin: bottom;
+  z-index: 100; }
+  .preloader .black_wall {
+    height: 100%;
+    background-color: #222;
+    transform-origin: top;
+    animation: preloader_slide 0.5s ease-in-out 0s 1 normal both; }
+  .preloader .loader {
+    width: 100%;
+    height: 3px;
+    position: absolute;
+    border-radius: 2px;
+    top: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    background-color: #FFC41F;
+    transform-origin: left;
+    animation: loader_running 3s ease-in-out 1s infinite normal both; }
+
+.off {
+  animation: preloader_slide 0.5s ease-in-out 0s 1 reverse both; }
+
+@keyframes loader_running {
+  0% {
+    transform: scaleX(0);
+    transform-origin: left; }
+  49% {
+    transform: scaleX(1);
+    transform-origin: left; }
+  50% {
+    transform: scaleX(1);
+    transform-origin: right; }
+  100% {
+    transform-origin: right;
+    transform: scaleX(0); } }
+@keyframes preloader_slide {
+  from {
+    transform: scaleY(0); }
+  to {
+    transform: scaleY(1); } }
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  right: 2em;
+  height: 100vh; }
+  .menu .menu-content a {
+    display: block;
+    border-radius: 10em;
+    background: #2b2a2a;
+    color: #ddd;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 17px;
+    margin-bottom: 1.5em;
+    transition: .5s all;
+    position: relative; }
+    .menu .menu-content a span {
+      background: #FFB400;
+      border-radius: 30px;
+      position: absolute;
+      top: 0;
+      right: 0px;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font: 500 15px "Poppins";
+      text-transform: uppercase;
+      padding: 0 30px 0 30px;
+      transition: .3s all;
+      opacity: 0;
+      z-index: -1; }
+    .menu .menu-content a:hover {
+      background: #FFB400; }
+      .menu .menu-content a:hover span {
+        right: 5px;
+        opacity: 1;
+        padding: 0 50px 0 30px; }
+  .menu .menu-content .button-menu {
+    background: #FFB400; }
+
+.button-toggle {
+  display: none;
+  width: 54px;
+  height: 54px;
+  background: #252522;
+  position: fixed;
+  right: 2em;
+  top: 2em;
+  cursor: pointer;
+  border-radius: 5px;
+  z-index: 12; }
+  .button-toggle .button-toggle-items span {
+    display: block;
+    height: 2px;
+    width: 23px;
+    background: #fff;
+    margin-bottom: 5px;
+    border-radius: 3px;
+    transition: .3s all;
+    position: relative; }
+  .button-toggle .button-toggle-transform span:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 5px); }
+  .button-toggle .button-toggle-transform span:nth-child(2) {
+    opacity: 0; }
+  .button-toggle .button-toggle-transform span:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -5px); }
+
+.menu-sidebar {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  position: fixed;
+  top: 0;
+  z-index: 11;
+  background: #252525;
+  display: none;
+  padding: 60px 3%;
+  transition: 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  transform: translate(-100%); }
+  .menu-sidebar a {
+    display: flex;
+    color: white;
+    width: 94%;
+    padding: 13px 0;
+    border-bottom: 1px solid #333;
+    font: 400 26px "Poppins";
+    line-height: 42px;
+    text-transform: uppercase; }
+    .menu-sidebar a:nth-last-child(1) {
+      border-bottom: 0px; }
+    .menu-sidebar a span {
+      display: block;
+      margin-right: 1em;
+      font-size: 25px; }
+  .menu-sidebar .menu-sidebar-a {
+    color: #FFB400;
+    font-weight: 600; }
+
+.menu-sidebar-show {
+  transform: translate(0%); }
+
+.language {
+  position: fixed;
+  background: #fff;
+  top: 210px;
+  left: 0;
+  z-index: 8;
+  box-shadow: #ccc 0 0 2px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 3px;
+  cursor: pointer;
+  padding: 10px 14px 10px 14px;
+  transition: .3s all; }
+  .language img {
+    width: 1.5em; }
+
+.language-out {
+  transform: translate(-102%); }
+
+.change-lang {
+  padding: 16px;
+  position: fixed;
+  top: 165px;
+  transition: .3s all;
+  background: #fff;
+  z-index: 8;
+  left: 0;
+  border-radius: 0 5px 5px 0;
+  box-shadow: #ccc 0 0 2px;
+  width: 11em;
+  transform: translate(-105%); }
+  .change-lang .change-lang-title {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: .5em; }
+    .change-lang .change-lang-title .h3 {
+      color: #333;
+      font-weight: 700;
+      line-height: 18px;
+      text-transform: uppercase;
+      margin-top: 0;
+      margin-bottom: .5em; }
+    .change-lang .change-lang-title span {
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #999; }
+  .change-lang a {
+    display: block;
+    color: #666;
+    padding: 6px;
+    cursor: pointer;
+    transition: .3s all; }
+    .change-lang a:hover {
+      background: #eee; }
+
+.change-lang-show {
+  transform: translate(0); }
+
+.content-clip {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  right: 0;
+  top: 0;
+  clip-path: polygon(0 0, 12.5% 0%, 25% 100%, 0% 100%);
+  background: #FFB400; }
+
+.error {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .error .error-content {
+    margin-top: -8em;
+    text-align: center; }
+    .error .error-content .h1-error {
+      font: 700 175px "Poppins";
+      letter-spacing: 5px;
+      color: #fff;
+      text-shadow: 1px 2px #2b2b2b, 2px 4px #2b2b2b, 3px 6px #2b2b2b, 4px 8px #2b2b2b, 5px 10px #2b2b2b, 6px 12px #2b2b2b, 7px 14px #2b2b2b, 8px 16px #2b2b2b, 9px 18px #2b2b2b, 10px 20px #2b2b2b;
+      line-height: 0; }
+    .error .error-content h2 {
+      font: 600 25px "Poppins";
+      color: #fff; }
+    .error .error-content h3 {
+      font: 400 16px "Poppins";
+      color: white;
+      margin-top: -1em; }
+
+@media screen and (max-width: 1125px) {
+  .h1 {
+    font: 700 42px "Poppins";
+    line-height: 52px; }
+
+  .about {
+    width: 80%; }
+    .about .about-first {
+      width: 45%; }
+      .about .about-first .about-personal .h3:nth-child(6) a {
+        word-break: break-all; }
+      .about .about-first .about-personal .h3 a {
+        display: block;
+        width: 80%; }
+    .about .about-second {
+      width: 55%; }
+      .about .about-second .squares-item {
+        height: 9em;
+        padding: 10px 30px 10px 40px; }
+        .about .about-second .squares-item:nth-child(3), .about .about-second .squares-item:nth-child(4) {
+          margin-top: -9em; }
+        .about .about-second .squares-item .h1 {
+          font-size: 50px; }
+
+  .potfolio-grid .direction-reveal__card {
+    height: 15em; } }
+@media screen and (max-width: 1100px) {
+  .about .about-second .squares-item {
+    padding: 10px 20px 10px 30px; } }
+@media screen and (max-width: 1000px) {
+  .h1 {
+    font: 700 38px "Poppins";
+    line-height: 48px; }
+
+  .menu {
+    display: none; }
+
+  .button-toggle {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+
+  .menu-sidebar {
+    display: block; }
+
+  .content-clip {
+    display: none; }
+
+  .content {
+    display: block;
+    text-align: center;
+    width: 40em;
+    margin-left: auto;
+    margin-right: auto; }
+    .content .photo-box {
+      width: 100%;
+      height: auto;
+      padding: 30px 0;
+      margin-top: 1em; }
+      .content .photo-box .photo {
+        width: 270px;
+        height: 270px;
+        border-radius: 100%;
+        border: 4px solid #252525; }
+        .content .photo-box .photo .photo-int {
+          background-position: center; }
+    .content .text-box {
+      width: 100%; }
+      .content .text-box .text-content {
+        width: 100%; }
+        .content .text-box .text-content .text {
+          width: 100%;
+          margin-left: auto;
+          margin-right: auto; }
+          .content .text-box .text-content .text .h1 {
+            margin-top: 0; }
+          .content .text-box .text-content .text .h3-2 {
+            font: 500 15px "Open Sans";
+            line-height: 30px; }
+
+  .about {
+    display: block;
+    margin-top: 0em;
+    width: 720px; }
+    .about .about-first {
+      width: 100%; }
+      .about .about-first .about-personal h3 a {
+        display: inline !important; }
+    .about .about-second {
+      width: 100%;
+      margin-top: 3em; }
+      .about .about-second .squares-item {
+        height: auto;
+        padding: 20px 30px 25px 40px; }
+        .about .about-second .squares-item:nth-child(3), .about .about-second .squares-item:nth-child(4) {
+          margin-top: 0; }
+        .about .about-second .squares-item .squares-item-second .h3 {
+          width: 50%; }
+
+  .skills {
+    width: 720px; }
+
+  .experience {
+    width: 720px; }
+    .experience .experience-grid {
+      display: block; }
+      .experience .experience-grid .experience-item {
+        margin-bottom: 40px; }
+
+  .contact {
+    display: block;
+    width: 720px;
+    padding-bottom: 4em; }
+    .contact .contact-first {
+      width: 100%; }
+      .contact .contact-first .h3 {
+        width: 100%; }
+    .contact .contact-second {
+      width: 100%;
+      margin-top: 3em; }
+
+  .potfolio-grid {
+    width: 720px;
+    grid-template-columns: 1fr 1fr; }
+    .potfolio-grid .direction-reveal__card {
+      height: 15em; }
+
+  .m-lightbox {
+    background: #252525 !important; }
+    .m-lightbox .m-lightbox__close {
+      right: 0em;
+      margin-left: 50%;
+      transform: translate(-50%);
+      position: relative; }
+    .m-lightbox .m-lightbox__nextPrev {
+      top: 1em;
+      -webkit-transform: translateY(-50%);
+      transform: translateY(-50%); }
+    .m-lightbox .m-lightbox__slide .lightbox-slide {
+      width: 720px; }
+      .m-lightbox .m-lightbox__slide .lightbox-slide .lightbox-cont .lightbox-item:nth-child(4) h3 a {
+        word-break: break-all;
+        display: block; } }
+@media screen and (max-width: 800px) {
+  .about {
+    width: 540px; }
+    .about .about-second .squares-item {
+      padding: 10px 30px 15px 40px; }
+
+  .skills {
+    width: 540px; }
+    .skills .skills-img {
+      grid-template-columns: repeat(4, 1fr); }
+
+  .experience {
+    width: 540px;
+    padding-bottom: 2em; }
+
+  .contact {
+    width: 540px; }
+    .contact .contact-second form {
+      display: block; }
+      .contact .contact-second form input, .contact .contact-second form textarea {
+        margin-bottom: 30px; }
+      .contact .contact-second form textarea {
+        padding: .75em 10%;
+        width: 80%; }
+      .contact .contact-second form button {
+        width: 100%; }
+
+  .potfolio-grid {
+    width: 540px; }
+
+  .m-lightbox .m-lightbox__slide .lightbox-slide {
+    width: 540px; }
+    .m-lightbox .m-lightbox__slide .lightbox-slide .lightbox-img {
+      min-width: 540px;
+      height: 20em; } }
+@media screen and (max-width: 750px) {
+  .content {
+    width: 35em; } }
+@media screen and (max-width: 600px) {
+  .h1 {
+    font-size: 29px;
+    line-height: 39px; }
+
+  .button-toggle {
+    top: 5px;
+    right: 5px; }
+
+  .menu-sidebar {
+    padding: 60px 5%; }
+    .menu-sidebar a {
+      width: 90%; }
+      .menu-sidebar a span {
+        margin-right: .5em; }
+
+  .content {
+    width: 90%; }
+    .content .photo-box .photo {
+      width: 200px;
+      height: 200px; }
+    .content .text-box {
+      text-align: left; }
+      .content .text-box .text-content .text .h3-2 {
+        font-size: 14px;
+        line-height: 28px; }
+
+  .letters {
+    text-align: left;
+    height: auto;
+    position: relative;
+    background: #252525;
+    padding: 16px 0px 14px;
+    border-bottom: 1px solid #333;
+    margin-bottom: 36px;
+    position: fixed;
+    z-index: 10;
+    top: 0; }
+    .letters .h1-back {
+      display: none; }
+    .letters .letters-sub {
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+      top: 0;
+      position: relative;
+      text-align: left; }
+      .letters .letters-sub .h1 {
+        font-size: 26px;
+        line-height: 31px;
+        display: block;
+        margin-top: 0;
+        margin-bottom: 0; }
+
+  .about {
+    margin-top: 5.5em;
+    width: 87.5%; }
+    .about .about-first .h2 {
+      font-size: 21px;
+      line-height: 25px; }
+    .about .about-first .photo-box {
+      display: block; }
+    .about .about-first .about-personal {
+      margin-top: 1em; }
+      .about .about-first .about-personal .h3 {
+        font-size: 14px; }
+        .about .about-first .about-personal .h3 a {
+          display: block !important; }
+    .about .about-second .squares-item {
+      padding: 15px 15px 5px 20px; }
+      .about .about-second .squares-item .h1 {
+        font-size: 40px;
+        line-height: 48px;
+        margin: 0 auto;
+        margin-bottom: .15em; }
+      .about .about-second .squares-item .squares-item-second span {
+        display: none; }
+      .about .about-second .squares-item .squares-item-second .h3 {
+        font-size: 14px;
+        line-height: 22px;
+        padding: 0 0;
+        width: 60%; }
+
+  .skills {
+    width: 87.5%; }
+    .skills .h2 {
+      font-size: 21px;
+      line-height: 25px; }
+    .skills .skills-img {
+      grid-template-columns: repeat(3, 1fr); }
+
+  .experience {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto; }
+    .experience .experience-grid .experience-item .h2 {
+      font-size: 17px;
+      display: block !important; }
+      .experience .experience-grid .experience-item .h2 a {
+        display: block !important; }
+    .experience .h2 {
+      font-size: 21px;
+      line-height: 25px; }
+
+  .contact {
+    margin-top: 5.5em;
+    width: 87.5%; }
+    .contact .h2 {
+      font-size: 21px;
+      line-height: 25px;
+      margin-bottom: 1em; }
+    .contact .h3 {
+      font-size: 14px;
+      line-height: 22px; }
+
+  .potfolio-grid {
+    width: 87.5%;
+    margin-top: 5.5em;
+    display: block; }
+    .potfolio-grid .direction-reveal__card {
+      height: 20em;
+      margin-bottom: 30px; }
+
+  .m-lightbox {
+    overflow-y: auto;
+    overflow-x: hidden; }
+    .m-lightbox .m-lightbox__slide {
+      padding-bottom: 5em !important; }
+      .m-lightbox .m-lightbox__slide .lightbox-slide {
+        width: 95%;
+        padding: 15px;
+        margin-top: 2em; }
+        .m-lightbox .m-lightbox__slide .lightbox-slide .h2 {
+          font-size: 25px;
+          line-height: 30px; }
+        .m-lightbox .m-lightbox__slide .lightbox-slide .lightbox-cont .lightbox-item .h3 {
+          font-size: 14px;
+          line-height: 22px; }
+          .m-lightbox .m-lightbox__slide .lightbox-slide .lightbox-cont .lightbox-item .h3 a {
+            display: block; }
+        .m-lightbox .m-lightbox__slide .lightbox-slide .lightbox-img {
+          min-width: 87.5%;
+          height: 15em; } }
+@media screen and (max-width: 550px) {
+  .menu-sidebar a {
+    font-size: 18px;
+    width: 90%;
+    padding: 8px 0; }
+    .menu-sidebar a span {
+      font-size: 16px;
+      margin-right: 1em; } }
+@media screen and (max-width: 500px) {
+  .error {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto; }
+    .error .error-content {
+      margin-top: 10em; }
+      .error .error-content .h1-error {
+        font: 700 125px "Poppins";
+        line-height: 0; }
+      .error .error-content h2 {
+        font-size: 20px;
+        margin-bottom: 1.5em; }
+
+  .language {
+    left: calc(100% - 1.5em - 28px);
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 3px;
+    top: 80vh; } }
+@media screen and (max-width: 450px) {
+  .skills .skills-img {
+    grid-template-columns: 1fr 1fr; }
+    .skills .skills-img .skills-img-item img {
+      width: 70px; }
+    .skills .skills-img .skills-img-item .h3 {
+      font-size: 14px; } }
+@media screen and (max-width: 400px) {
+  .about .about-first .about-personal {
+    display: block; }
+    .about .about-first .about-personal .h3 a {
+      display: inline !important; }
+  .about .about-first .button {
+    display: block;
+    margin-top: 2em; }
+  .about .about-second {
+    display: block; }
+    .about .about-second .squares-item {
+      margin-bottom: 20px; }
+      .about .about-second .squares-item .squares-item-second a {
+        width: 100%; }
+
+  .potfolio-grid .direction-reveal__card {
+    height: 17em; } }
+
+/*# sourceMappingURL=error.css.map */
