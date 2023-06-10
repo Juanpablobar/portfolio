@@ -26,30 +26,45 @@
 .m-lightbox__slide{
     &:nth-child(1){
         .lightbox-img{
-            background-image: url('../img/Capture investor-academy.webp');
+            background-image: url('../img/capture-chedraui.png');
         }
     }
     &:nth-child(2){
         .lightbox-img{
-            background-image: url('../img/Capture Renovation.webp');
+            background-image: url('../img/capture-cosmo.png');
         }
     }
     &:nth-child(3){
         .lightbox-img{
-            background-image: url('../img/Capture Grodel.webp');
+            background-image: url('../img/capture-jefferspet.png');
         }
     }
     &:nth-child(4){
         .lightbox-img{
-            background-image: url('../img/Capture Clinkia.webp');
+            background-image: url('../img/Capture investor-academy.webp');
         }
     }
     &:nth-child(5){
         .lightbox-img{
-            background-image: url('../img/Capture SpiceHub.webp');
+            background-image: url('../img/Capture Renovation.webp');
         }
     }
     &:nth-child(6){
+        .lightbox-img{
+            background-image: url('../img/Capture Grodel.webp');
+        }
+    }
+    &:nth-child(7){
+        .lightbox-img{
+            background-image: url('../img/Capture Clinkia.webp');
+        }
+    }
+    &:nth-child(8){
+        .lightbox-img{
+            background-image: url('../img/Capture SpiceHub.webp');
+        }
+    }
+    &:nth-child(9){
         .lightbox-img{
             background-image: url('../img/Capture Office Point.webp');
         }
